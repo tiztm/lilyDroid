@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+  		android:text="标题"
+  		/>
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="fill_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <TextView 
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+  		android:text="收信人"
+  		/>
+    <EditText
+        android:id="@+id/edt_to"
+        android:layout_width="fill_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+     <TextView 
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+  		android:text="内容"
+  		/>
+
+    <EditText
+        android:id="@+id/edt_cont"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:inputType="textMultiLine" >
+        <requestFocus />
+    </EditText>
+    
+</LinearLayout>

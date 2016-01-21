@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/button">
+
+	<TextView android:id="@+id/topictitle"
+		android:layout_marginRight="10dp" android:layout_marginLeft="6dp"
+		android:layout_marginTop="5dp" android:maxLines="2"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textColor="@drawable/itemcolor" android:textSize="18dp" />
+
+	<RelativeLayout android:layout_width="fill_parent"
+	android:layout_marginTop="1dp"
+	android:layout_marginBottom="3dp"
+		android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+	    <TextView android:id="@+id/topicm"
+			android:layout_marginLeft="6dp" android:singleLine="true"
+			android:textColor="#FF0000"
+			android:textSize="13dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true">
+		</TextView>
+
+		<TextView android:id="@+id/topicau"
+		     android:singleLine="true"
+			android:textColor="#0080FF" android:textSize="13dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/topicm">
+		</TextView>
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/topicother"
+			android:layout_marginRight="12dp" android:singleLine="true"
+			android:textColor="#0080FF" android:textSize="13dp"
+			android:layout_width="wrap_content" android:layout_alignParentRight="true">
+		</TextView>
+	</RelativeLayout>
+
+
+
+
+</LinearLayout>

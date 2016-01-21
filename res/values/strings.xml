@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="bkcolor">#FFFFFF</drawable>
+    <string name="app_name">小百合</string>
+    <string name="bbstop10">http://bbs.nju.edu.cn/bbstop10</string>
+    <string name="areaStr">http://bbs.nju.edu.cn/bbstdoc?board=</string>
+    <string name="top10Str">十 大</string>
+    <string name="back">返回</string>
+    <string name="pre">上 页</string>
+   <string name="next">下 页</string>
+     <string name="exitStr">退 出</string>
+     <string name="like">邮 箱</string>
+    <string name="allStr">版 面</string>
+     <string name="huifu">回 复</string>
+    <string name="login_label_username">帐 号</string>
+    <string name="bbshot">热门话题</string>
+     <string name="area">讨论区</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_signin">登 录</string>
+    <string name="login_status_logging_in">登录中...</string>
+    <string name="login_username_hint">小百合用户名</string>
+    <string name="getnew">网络故障请重试!</string>
+     <string name="listColor">#0080FF</string>
+     <string-array name="pic_value">  
+        <item>1</item>  
+        <item>2</item>  
+        <item>3</item>    
+    </string-array>  
+    <string-array name="pic_text">  
+        <item>只在WIFI环境下显示</item>  
+        <item>一直不显示</item>  
+        <item>手机网络和WIFI环境都显示</item>  
+    </string-array>  
+    
+    
+    <string-array name="sign_value">
+    	<item>[m</item>    
+        <item>[1;31m</item>  
+        <item>[1;32m</item>  
+        <item>[1;33m</item>  
+        <item>[1;34m</item>  
+        <item>[1;35m</item>  
+        <item>[1;36m</item>  
+    </string-array>  
+    <string-array name="sign_text">  
+     	<item>黑白</item>  
+        <item>红</item>  
+        <item>绿</item>  
+        <item>黄</item>  
+        <item>蓝</item>  
+        <item>紫红</item>  
+        <item>蓝绿</item>  
+    </string-array>  
+    
+    
+    <string-array name="full_value">
+    	<item>1</item>    
+        <item>2</item>  
+         <item>4</item>  
+        <item>3</item>  
+    </string-array>  
+    <string-array name="full_text">  
+     	<item>不全屏</item>  
+        <item>隐藏标题栏</item>  
+        <item>隐藏状态栏</item>  
+        <item>隐藏状态栏和标题栏</item>  
+    </string-array>  
+
+    <string-array name="back_value">
+    	<item>1</item>    
+        <item>2</item>  
+        <item>3</item>  
+    </string-array>  
+    <string-array name="back_text">  
+     	<item>百合原生</item>  
+        <item>绿色护眼</item>  
+        <item>夜间模式</item>  
+    </string-array>  
+    
+    <string-array name="bar_value">
+    	<item>1</item>    
+        <item>2</item>  
+        <item>3</item>  
+    </string-array>  
+    <string-array name="bar_text">  
+     	<item>不显示</item>  
+        <item>显示</item>  
+        <item>保持上次状态</item>  
+    </string-array>  
+    
+        
+    <string-array name="newmail_value">
+    	<item>1000000</item>    
+        <item>60</item>  
+        <item>120</item>  
+        <item>300</item>  
+        <item>600</item>  
+    </string-array>  
+    <string-array name="newmail_text">  
+     	<item>从不</item>  
+        <item>1分钟</item>  
+        <item>2分钟</item>  
+        <item>5分钟</item>  
+        <item>10分钟</item>  
+    </string-array>  
+    
+        
+    
+      
+    <string-array name="cam_value">
+    	<item>640</item>    
+        <item>800</item>  
+        <item>1024</item>  
+    </string-array>  
+    <string-array name="cam_text">  
+     	<item>小</item>  
+        <item>中</item>  
+        <item>大</item>  
+    </string-array>  
+    
+    
+</resources>

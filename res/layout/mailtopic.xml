@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/topicll"
+        style="@style/normalTab" >
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:stretchColumns="0,1,2,3"     
+>  
+<TableRow>  
+    
+         <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_del"
+            style="@style/normalBtn"
+            android:icon="@drawable/rec"
+            android:text="删 除" >
+        </com.sonyericsson.zoom.ImageTextButton>
+    
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_huifu"
+            style="@style/normalBtn"
+            android:icon="@drawable/mailback"
+            android:text="回 信" >
+        </com.sonyericsson.zoom.ImageTextButton>
+        
+       
+            
+                </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/topicll"
+        android:background="#FFFFFF"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:autoLink="web"
+            android:background="@drawable/backpng"
+            android:lineSpacingExtra="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollHorizontally="false"
+            android:textColor="#000000" />
+    </ScrollView>
+
+</RelativeLayout>

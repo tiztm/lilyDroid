@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="设置" >
+    
+    
+
+    
+<PreferenceCategory   
+        android:title="阅读设置">   
+
+    <ListPreference
+        android:dialogTitle="图片显示条件"
+        android:defaultValue="1"
+        android:entries="@array/pic_text"
+        android:entryValues="@array/pic_value"
+        android:key="picDS"
+        android:summary="在何种情况下显示图片"
+        android:title="图片显示" >
+    </ListPreference>
+    <com.ztm.SeekBarPreference
+            android:defaultValue="18"
+            android:dialogMessage=""
+            android:key="txtFonts"
+            android:max="24"
+            android:summary="主题文章中字体的大小"
+            android:text="sp"
+            android:title="设置字体大小" />
+     <com.ztm.SeekBarPreference
+            android:defaultValue="20"
+            android:dialogMessage="设置背景透明度"
+            android:key="backAlpha"
+            android:max="100"
+            android:summary="背景透明度（100%为完全透明）"
+            android:text="%"
+            android:title="背景透明度" />
+     
+     <!-- 
+     <ListPreference
+        android:dialogTitle="文章阅读配色"
+        android:defaultValue="1"
+        android:entries="@array/back_text"
+        android:entryValues="@array/back_value"
+        android:key="readBack"
+        android:summary="选一个适合你的阅读颜色"
+        android:title="阅读配色" >
+    </ListPreference>
+     -->
+	<CheckBoxPreference
+        android:defaultValue="true"
+        android:key="isTouch"
+        android:summaryOff="关闭"
+        android:summaryOn="开启"
+        android:title="阅读手势识别" >
+    </CheckBoxPreference>
+    
+     <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="isIP"
+        android:summaryOff="不显示"
+        android:summaryOn="显示"
+        android:title="文章是否显示IP" >
+     
+    </CheckBoxPreference>   
+    
+    <ListPreference
+        android:dialogTitle="选择按钮栏显示模式"
+        android:defaultValue="1"
+        android:entries="@array/bar_text"
+        android:entryValues="@array/bar_value"
+        android:key="barStat"
+        android:summary="主题文章界面按钮栏是否显示"
+        android:title="按钮栏显示" >
+    </ListPreference>
+         
+         
+ </PreferenceCategory>    
+ 
+    <PreferenceCategory   
+        android:title="回复设置">   
+        
+        
+      <!--  
+     <ListPreference
+        android:dialogTitle="照片缩放程度"
+        android:defaultValue="800"
+        android:entries="@array/cam_text"
+        android:entryValues="@array/cam_value"
+        android:key="camwidth"
+        android:summary="照片缩放程度"
+        android:title="上传照片大小" >
+    </ListPreference>
+         -->    
+         
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="isBackWord"
+        android:summaryOff="不使用"
+        android:summaryOn="使用"
+        android:title="是否使用手机版专用签名" >
+     
+    </CheckBoxPreference>   
+    
+
+ 
+     <EditTextPreference
+        android:defaultValue="发送自 我的小百合Android客户端 by ${model}"
+        android:key="backWords"
+		android:title="手机版专用签名"
+		android:summary="点击输入"
+		android:dialogTitle="专用签名设置"
+	/>
+     
+     <ListPreference
+        android:dialogTitle="签名颜色"
+        android:defaultValue="[1;32m"
+        android:entries="@array/sign_text"
+        android:entryValues="@array/sign_value"
+        android:key="signColor"
+        android:summary="专用签名颜色"
+        android:title="签名颜色" >
+    </ListPreference>
+        
+      <EditTextPreference
+        android:defaultValue="沙发"
+        android:key="fastRe"
+		android:title="快捷回复"
+		android:summary="用##隔开多个快捷回复"
+		android:dialogTitle="快捷回复设置"
+	/>
+      
+       <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="isMoreMoreFast"
+        android:summaryOff="回复发送前选择快捷回复内容"
+        android:summaryOn="直接使用第一条快捷回复来回复"
+        android:title="更加快捷回复！" >
+    </CheckBoxPreference>   
+     
+</PreferenceCategory>
+
+        
+<PreferenceCategory   
+        android:title="其他相关设置">   
+        
+    
+     <ListPreference
+        android:dialogTitle="选择检查新邮件的间隔"
+        android:defaultValue="300"
+        android:entries="@array/newmail_text"
+        android:entryValues="@array/newmail_value"
+        android:key="newmail"
+        android:summary="设置检查邮件的时间间隔"
+        android:title="邮件提醒(需重启)" >
+    </ListPreference>
+    
+    
+   <ListPreference
+        android:dialogTitle="选择显示模式"
+        android:defaultValue="1"
+        android:entries="@array/full_text"
+        android:entryValues="@array/full_value"
+        android:key="isFull"
+        android:summary="设置标题栏和状态栏是否显示"
+        android:title="显示模式(需重启)" >
+    </ListPreference>
+   
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="isChange"
+        android:summaryOff="随重力方向改变屏幕方向"
+        android:summaryOn="一直竖屏"
+        android:title="保持竖屏(需重启)" >
+    </CheckBoxPreference>   
+    
+        
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="isAutoLogin"
+        android:summaryOff="关闭"
+        android:summaryOn="打开"
+        android:title="静默登录" >
+    </CheckBoxPreference>   
+        
+    
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="isAuto"
+        android:summaryOff="关闭"
+        android:summaryOn="打开"
+        android:title="自动检查更新" >
+    </CheckBoxPreference>   
+       
+       
+       
+    
+       
+ </PreferenceCategory>    
+    
+    
+    
+    
+</PreferenceScreen>

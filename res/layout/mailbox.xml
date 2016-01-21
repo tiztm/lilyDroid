@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+     <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="@style/normalTab"  >
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:stretchColumns="0,1,2,3"     
+>  
+<TableRow>  
+    
+     <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_search"
+            style="@style/normalBtn"
+            android:icon="@drawable/ser"
+            android:text="搜 索" >
+        </com.sonyericsson.zoom.ImageTextButton>
+    
+    
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_pre"
+            style="@style/normalBtn"
+            android:icon="@drawable/prev"
+            android:text="@string/pre" >
+        </com.sonyericsson.zoom.ImageTextButton>
+
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_next"
+            style="@style/normalBtn"
+            android:icon="@drawable/next"
+            android:text="@string/next" >
+        </com.sonyericsson.zoom.ImageTextButton>
+        
+          <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_mail"
+           
+            android:icon="@drawable/mailback"
+             style="@style/normalBtn"  
+           android:text="发 信" 
+	   >
+        </com.sonyericsson.zoom.ImageTextButton>
+                </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    <ListView
+        android:id="@+id/topicList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout1"
+        android:cacheColorHint="#00000000"
+        android:divider="#D3D3D3"
+        android:dividerHeight="1dp"
+        android:scrollingCache="false"
+        android:textColor="#000000" >
+    </ListView>
+
+</RelativeLayout>

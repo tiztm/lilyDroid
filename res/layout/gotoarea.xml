@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+       <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="@style/normalTab" >
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:stretchColumns="0,1,2,3"     
+>  
+<TableRow>  
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_link"
+            style="@style/normalBtn"
+            android:icon="@drawable/top"
+            android:text="@string/top10Str" >
+        </com.sonyericsson.zoom.ImageTextButton>
+
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_all"
+            style="@style/normalBtn"
+            android:icon="@drawable/board1"
+            android:text="@string/allStr" >
+        </com.sonyericsson.zoom.ImageTextButton>
+
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_like"
+            style="@style/normalBtn"
+            android:icon="@drawable/mailbox"
+            android:text="@string/like" >
+        </com.sonyericsson.zoom.ImageTextButton>
+
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_set"
+            style="@style/normalBtn"
+            android:icon="@drawable/hot"
+            android:text="@string/bbshot" >
+        </com.sonyericsson.zoom.ImageTextButton>
+                </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    
+    
+  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+      android:layout_above="@id/linearLayout1"
+       android:layout_alignParentTop="true"
+         android:background="#D0F0C0"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+      android:id="@+id/rl"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    
+    
+    
+    <AutoCompleteTextView
+        android:id="@+id/area_edit"
+         android:layout_marginTop="18dp"
+         android:hint="讨论版名或博客作者ID"
+        android:layout_width="220dp"
+         android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/area_edit"
+        android:text="出发" />
+   
+     </RelativeLayout>
+    <ExpandableListView
+	  android:id="@+id/area_view"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:drawSelectorOnTop="false"
+  	  android:divider="#90EE90"  
+	  android:fastScrollEnabled="true"
+      android:dividerHeight="1dp"
+	  android:cacheColorHint="#00000000"
+	  android:layout_below="@id/rl" >
+	 </ExpandableListView>
+     </RelativeLayout>
+</RelativeLayout>
+
+   
+

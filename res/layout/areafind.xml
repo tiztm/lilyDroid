@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background_login">
+<RelativeLayout
+      android:id="@+id/login_div"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="15dip"
+      android:background="@drawable/background_login_div_bg"
+      android:gravity="right"
+      android:padding="15dip" >
+
+  	<!-- 标题 -->
+  	<TextView 
+  		android:id="@+id/login_user_input"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_alignParentTop="true"
+  		android:layout_marginTop="5dp"
+  		android:text="@string/login_label_username"
+  		style="@style/normalText"/>
+  	<EditText 
+  		android:id="@+id/textName"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_below="@id/login_user_input"
+  		android:singleLine="true"
+  		android:inputType="text"/>
+    <!-- 作者 -->
+    <TextView 
+    	android:id="@+id/login_password_input"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/textName"
+    	android:layout_marginTop="3dp"
+    	android:text="@string/login_label_password"
+    	style="@style/normalText"/>
+    <EditText 
+    	android:id="@+id/textAuth"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/login_password_input"
+    	android:password="true"
+    	android:singleLine="true"
+    	android:inputType="textPassword"
+    />
+
+    <Button
+        android:id="@+id/btn_find"
+         android:layout_below="@id/textAuth"
+        android:layout_width="120dp"
+        android:layout_marginRight ="10dp"
+        android:layout_height="wrap_content"
+       android:layout_gravity="right"
+        android:background="@drawable/blue_button"
+        android:text="查找" />
+
+  
+    
+  </RelativeLayout>
+
+   
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+     <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="@style/normalTab" >
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:stretchColumns="0,1,2,3"     
+>  
+<TableRow>  
+       <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_link"
+            style="@style/normalBtn"
+            android:icon="@drawable/top"
+            android:text="@string/top10Str" >
+        </com.sonyericsson.zoom.ImageTextButton>
+
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_all"
+            style="@style/normalBtn"
+            android:icon="@drawable/board"
+            android:text="@string/allStr" >
+        </com.sonyericsson.zoom.ImageTextButton>
+
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_like"
+            style="@style/normalBtn"
+            android:icon="@drawable/mailbox"
+            android:text="@string/like" >
+        </com.sonyericsson.zoom.ImageTextButton>
+
+        <com.sonyericsson.zoom.ImageTextButton
+            android:id="@+id/btn_set"
+            style="@style/normalBtn"
+            android:icon="@drawable/hot1"
+            android:text="@string/bbshot" >
+        </com.sonyericsson.zoom.ImageTextButton>
+                </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    
+    
+    
+    <ListView
+        android:id="@+id/topicList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_above="@id/linearLayout1"
+		android:cacheColorHint="@android:color/transparent"
+        android:textColor="#000000" 
+		android:scrollingCache="false" 
+		android:divider="#D3D3D3"  
+		android:fastScrollEnabled="true"
+        android:dividerHeight="1dp"
+        >
+    </ListView>
+</RelativeLayout>
